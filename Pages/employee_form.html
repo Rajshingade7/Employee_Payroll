@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Payroll Form</title>
+    <link rel="stylesheet" href="../Style/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="../Assets/logo.png" alt="Employee Payroll Logo">
+        </div>
+    </header>
+
+    <div class="container">
+        <form class="payroll-form">
+            <h2>Employee Payroll Form</h2>
+            <div class="name">
+
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+            </div>
+            <div class="profile-images">
+                <label>Profile image</label>
+                <img src="../Assets/PassPort img1.jpg" alt="Profile 1">
+                <img src="../Assets/PassPort img1.jpg" alt="Profile 2">
+                <img src="../Assets/PassPort img1.jpg" alt="Profile 3">
+                <img src="../Assets/PassPort img1.jpg" alt="Profile 4">
+            </div>
+
+            <label>Gender</label>
+            <div class="gender">
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+            </div>
+
+            <label>Department</label>
+            <div class="department">
+                <input type="checkbox" id="hr" name="department" value="HR">
+                <label for="hr">HR</label>
+                <input type="checkbox" id="sales" name="department" value="Sales">
+                <label for="sales">Sales</label>
+                <input type="checkbox" id="finance" name="department" value="Finance">
+                <label for="finance">Finance</label>
+                <input type="checkbox" id="engineer" name="department" value="Engineer">
+                <label for="engineer">Engineer</label>
+                <input type="checkbox" id="others" name="department" value="Others">
+                <label for="others">Others</label>
+            </div>
+
+            <label for="salary">Salary</label>
+            <select id="salary" name="salary" required>
+                <option value="">Select Salary</option>
+                <option value="50k-60k">50k-60k</option>
+                <option value="60k-70k">60k-70k</option>
+                <option value="70k-80k">70k-80k</option>
+            </select>
+
+            <label>Start Date</label>
+            <div class="start-date">
+                <select id="day" name="day" required>
+                    <option value="">Day</option>
+                    <!-- Add day options here -->
+                </select>
+                <select id="month" name="month" required>
+                    <option value="">Month</option>
+                    <!-- Add month options here -->
+                </select>
+                <select id="year" name="year" required>
+                    <option value="">Year</option>
+                    <!-- Add year options here -->
+                </select>
+            </div>
+
+            <label for="notes">Notes</label>
+            <textarea id="notes" name="notes"></textarea>
+
+            <div class="form-buttons">
+                <button type="button" onclick="resetForm()">Cancel</button>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

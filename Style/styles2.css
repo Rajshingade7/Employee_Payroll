@@ -1,0 +1,269 @@
+body {
+    top: 0px;
+    left: 0px;
+    width: vw;
+    height: vh;
+    background: #F7F7F7 0% 0% no-repeat padding-box;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 10%;
+    /* border: 1px solid black; */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+
+.head {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 50px;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.employee {
+    top: 32px;
+    left: 246px;
+    width: 127px;
+    height: 47px;
+    text-align: left;
+    font: normal normal bold 22px/25px Montserrat;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.employee2 {
+    color: #82A70C;
+}
+
+.payroll {
+    color: #42515F;
+}
+
+.main {
+    width: 60%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+
+}
+
+.form {
+    width: 73%;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid #3d3468; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    padding-left: 20px;
+    color: #42515F;
+
+}
+
+.form-heading {
+    font-size: 22px;
+    line-height: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+    margin: 20px 0;
+}
+
+.name {
+    display: flex;
+    top: 252px;
+    left: 688px;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+}
+
+.name-label {
+
+    flex: 0 0 auto;
+    margin-right: 100px;
+}
+
+.name-input {
+    flex: 1;
+    height: 100%;
+    display: flex;
+}
+
+.name-input input {
+    width: 80%;
+    height: 80%;
+    box-sizing: border-box;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profile-label {
+    margin-right: 35px;
+}
+
+.profile-item {
+    display: inline-block;
+    margin-right: 20px;
+    display: flex;
+
+
+}
+
+.profile-item input[type="radio"] {}
+
+.profile-item label {
+    display: block;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #e72020;
+    cursor: pointer;
+}
+
+.profile-item img {
+    display: block;
+    width: 45px;
+    height: 45px;
+    margin-bottom: 5px;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+.profile-item input[type="radio"]:checked+img {
+    border: 2px solid blue;
+}
+
+.gender {
+    display: flex;
+}
+
+.gender-label {
+    margin-right: 86px;
+}
+
+.department {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* border: 1px solid black;  */
+}
+
+.department-label {
+    flex: 0 0 auto;
+    margin-right: 44px;
+}
+
+.department-checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex: 1;
+}
+
+.department-checkboxes label {
+    display: flex;
+    align-items: center;
+}
+
+.salary {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.salary-label {
+    flex: 0 0 auto;
+    margin-right: 100px;
+}
+
+.salary-select {
+    flex: 1;
+}
+
+.salary-select select {
+    width: 341px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.start-date {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.start-date-label {
+    flex: 0 0 auto;
+    margin-right: 65px;
+}
+
+.start-date-selects {
+    display: flex;
+    gap: 10px;
+    flex: 1;
+}
+
+.start-date-selects select {
+    width: auto;
+    gap: 10px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.notes {
+    width: 100%;
+    height: 200px;
+    display:flex;
+    align-items: center;
+}
+.notes-label{
+    margin-right:100px;
+}
+.notes textarea{
+    width: 170%;
+}
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 10px; 
+}
+
+.button-container div {
+    display: flex;
+    gap: 10px; 
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+
+.btn:hover {
+    opacity: 0.8; 
+}

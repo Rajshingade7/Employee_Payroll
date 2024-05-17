@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Employee Payrole</title>
+    <link rel="stylesheet" href="../Style/styles2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <div class="image">
+                <img src="" alt="..loading">
+            </div>
+            <div class="employee">
+                <span class="employee2">Employee</span>
+                <span class="payroll">Payroll</span>
+            </div>
+        </div>
+
+    </header>
+    <div class="main">
+        <div class="form">
+            <div class="form-heading">
+                Employee Payroll Form
+            </div>
+
+            <!-- <div style="display: flex;">
+                <div style="display: flex; flex-direction: column; gap: 30px;">
+                    <label for="name">Name</label>
+                    <label for="name">Profile Image</label>
+                    <label for="name">Gender</label>
+                    <label for="name">Department</label>
+                    <label for="name">Salary</label>
+                    <label for="name">Start Date</label>
+                    <label for="name">Notes</label>
+                    <label for="name">Name</label>
+                </div>
+                <div class="input" style="display: flex; flex-direction: column; padding-left: 20px; gap:30px">
+                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name" required>
+
+                </div>
+
+            </div> -->
+            
+            <div class="name">
+                <div class="name-label">
+                    <label for="name">Name</label>
+                </div>
+                <div class="name-input">
+                    <input type="text" id="name" name="name" required>
+                </div>
+            </div>
+            <br>
+            <div class="profile">
+                <div class="profile-label">
+                    <label for="profile">Profile Image</label>
+                </div>
+                <div class="profile-item">
+                    <input type="radio" id="profile1" name="profile" value="profile1">
+                    <img src="../Assets/PassPort img1.jpg" alt="Profile 1">
+                </div>
+                
+                <div class="profile-item">
+                    <input type="radio" id="profile2" name="profile" value="profile2">
+                    <img src="../Assets/PassPort img1.jpg" alt="Profile 2">
+                </div>
+                
+                <div class="profile-item">
+                    <input type="radio" id="profile3" name="profile" value="profile3">
+                    <img src="../Assets/PassPort img1.jpg" alt="Profile 3">
+                </div>
+                
+                <div class="profile-item">
+                    <input type="radio" id="profile4" name="profile" value="profile4">
+                    <img src="../Assets/PassPort img1.jpg" alt="Profile 4">
+                </div>
+            </div>
+            <br><br>
+            <div class="gender">
+                <div class="gender-label">
+                    <label for="gender">Gender</label>
+                </div>
+                <div>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+            </div>
+            <br><br>
+            <div class="department">
+                <div class="department-label">
+                    <label for="department">Department</label>
+                </div>
+                <div class="department-checkboxes">
+                    <label><input type="checkbox" name="department" value="hr"> HR</label>
+                    <label><input type="checkbox" name="department" value="sales"> Sales</label>
+                    <label><input type="checkbox" name="department" value="marketing"> Marketing</label>
+                    <label><input type="checkbox" name="department" value="it"> IT</label>
+                </div>
+            </div>
+            <br>
+
+            <div class="salary">
+                <div class="salary-label">
+                    <label for="salary">Salary</label>
+                </div>
+                <div class="salary-select">
+                    <select name="salary" id="salary">
+                        <option value="range1">$30,000 - $40,000</option>
+                        <option value="range2">$40,000 - $50,000</option>
+                        <option value="range3">$50,000 - $60,000</option>
+                        <option value="range4">$60,000 - $70,000</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="start-date">
+                <div class="start-date-label">
+                    <label for="">Start Date</label>
+                </div>
+                <div class="start-date-option">
+                    <select id="day" name="day" required>
+                        <option value="">Day</option>
+                        
+                    </select>
+                    <select id="month" name="month" required>
+                        <option value="">Month</option>
+                        
+                    </select>
+                    <select id="year" name="year" required>
+                        <option value="">Year</option>
+                        
+                    </select>
+                </div>
+            </div>
+            
+            <div class="notes">
+                <div class="notes-label">
+                    <label for="notes">Notes</label>
+                </div>
+                <div>
+                    <textarea name="notes" id="notes" cols="30" rows="6"></textarea>
+                </div>
+            </div>
+            <br><br><br>
+            <div class="button-container">
+                <div>
+                    <button class="btn cancel-btn">Cancel</button>
+                </div>
+                <div>
+                    <button class="btn submit-btn">Submit</button>
+                    <button class="btn reset-btn">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
