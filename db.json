@@ -1,0 +1,37 @@
+{
+  "employees": [
+    {
+      "id": "1c2c",
+      "name": "Raj Ashok Shingade",
+      "profile": "profile1",
+      "gender": "male",
+      "departments": [
+        "marketing",
+        "it"
+      ],
+      "salary": "$30,000 - $40,000",
+      "startDate": {
+        "day": "",
+        "month": "3",
+        "year": ""
+      },
+      "notes": ""
+    },
+    {
+      "id": "621e",
+      "name": "Raj Shingade",
+      "profile": "profile1",
+      "gender": "male",
+      "departments": [
+        "sales"
+      ],
+      "salary": "$40,000 - $50,000",
+      "startDate": {
+        "day": "",
+        "month": "3",
+        "year": ""
+      },
+      "notes": ""
+    }
+  ]
+}
