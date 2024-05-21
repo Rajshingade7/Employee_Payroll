@@ -20,10 +20,21 @@ function handleFormSubmit(event) {
     });
   
     console.log(formData);
+    let existingEmployeeData = localStorage.getItem('employees');
+
+    if (!existingEmployeeData) {
+      existingEmployeeData = [];
+    } else {
+      existingEmployeeData = JSON.parse(existingEmployeeData);
+    }
+  
+    existingEmployeeData.push(formData);
+
+    localStorage.setItem('employees', JSON.stringify(existingEmployeeData));
   }
   
   document.querySelector('.submit-btn').addEventListener('click', handleFormSubmit);
-  
+
   function resetForm() {
     document.getElementById('name').value = '';
     document.querySelector('input[name="profile"]:checked').checked = false;
