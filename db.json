@@ -32,6 +32,54 @@
         "year": ""
       },
       "notes": ""
+    },
+    {
+      "id": "8296",
+      "name": "Raj Shingade",
+      "profile": "profile1",
+      "gender": "male",
+      "departments": [
+        "it"
+      ],
+      "salary": "$50,000 - $60,000",
+      "startDate": {
+        "day": "14",
+        "month": "",
+        "year": ""
+      },
+      "notes": "Raj Shingade "
+    },
+    {
+      "id": "d731",
+      "name": "Sagar dhade",
+      "profile": "profile1",
+      "gender": "female",
+      "departments": [
+        "hr"
+      ],
+      "salary": "$30,000 - $40,000",
+      "startDate": {
+        "day": "",
+        "month": "",
+        "year": ""
+      },
+      "notes": "Hello brother I am raj ashok shingade"
+    },
+    {
+      "id": "f503",
+      "name": "Raj Ashok Shingade",
+      "profile": "../Assets/PassPort_img1.jpg",
+      "gender": "male",
+      "departments": [
+        "hr"
+      ],
+      "salary": "$30,000 - $40,000",
+      "startDate": {
+        "day": "",
+        "month": "8",
+        "year": ""
+      },
+      "notes": "Hello mam raj this side"
     }
   ]
 }

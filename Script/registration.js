@@ -21,25 +21,37 @@ function handleFormSubmit(event) {
 
   console.log(formData);
 
-  const postData = {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(formData),
-  };
+  // const postData = {
+  //   method: 'POST',
+  //   headers: {
+  //     'Content-Type': 'application/json',
+  //   },
+  //   body: JSON.stringify(formData),
+  // };
 
-  fetch('http://localhost:3000/employees', postData)
-    .then(response => {
-      if (response.ok) {
-        console.log('Employee data stored successfully on the JSON server.');
-      } else {
-        console.error('Failed to store employee data on the JSON server.');
-      }
-    })
-    .catch(error => {
-      console.error('An error occurred while storing employee data on the JSON server:', error);
-    });
+  // fetch('http://localhost:3000/employees', postData)
+  //   .then(response => {
+  //     if (response.ok) {
+  //       console.log('Employee data stored successfully on the JSON server.');
+  //     } else {
+  //       console.error('Failed to store employee data on the JSON server.');
+  //     }
+  //   })
+  //   .catch(error => {
+  //     console.error('An error occurred while storing employee data on the JSON server:', error);
+  //   });
+  $.ajax({
+    url: 'http://localhost:3000/employees',
+    method: 'POST',
+    contentType: 'application/json',
+    data: JSON.stringify(formData),
+    success: function(response) {
+      console.log('Employee data stored successfully on the JSON server.');
+    },
+    error: function(xhr, status, error) {
+      console.error('Failed to store employee data on the JSON server:', error);
+    }
+  });
 }
 
 document.querySelector('.submit-btn').addEventListener('click', handleFormSubmit);
